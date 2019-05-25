@@ -1,8 +1,8 @@
 import React from 'react';
-
 import './App.css';
 import {Header} from "./components/Header";
 import {Player} from "./components/Player";
+import {AddPlayerForm} from "./components/AddPlayerForm";
 
 
 class App extends React.Component {
@@ -25,7 +25,6 @@ class App extends React.Component {
 
   handleChangeScore = (id, delta) => {
     // console.log(id, delta);
-
     this.setState(prevState => {
       this.state.players.forEach(item => {
         if (item.id === id) {
@@ -49,6 +48,7 @@ class App extends React.Component {
                     removePlayer={this.handleRemovePlayer} changeScore={this.handleChangeScore}/>
           ))
         }
+        <AddPlayerForm/>
       </div>
     );
   }
