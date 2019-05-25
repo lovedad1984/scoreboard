@@ -2,12 +2,6 @@ import React from 'react';
 
 export class Counter extends React.Component {
 
-  constructor(props) {
-    super(props);
-    // 1) this.incrementScore = this.incrementScore.bind(this);
-  }
-
-
   render() {
     return (
       <div className='counter'>

@@ -7,10 +7,6 @@ export class Stopwatch extends React.Component {
     isRunning: false
   }
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="stopwatch">

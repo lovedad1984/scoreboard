@@ -5,7 +5,7 @@ import {Stopwatch} from "./Stopwatch";
 export const Header = (props) => {
   console.log(props);
   // destruct assignment 해체 할당 문법
-  const {title, totalPlayers} = props;
+  const {title} = props;
   return (
     <header>
       <Statistics players={props.players}/>
