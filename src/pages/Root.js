@@ -11,16 +11,18 @@ export class Root extends React.Component {
   }
 
   render() {
-    return (
-      <BrowserRouter>
-        <Menu></Menu>
-        {/* 라우팅 영역*/}
-        <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route path="/heroes" component={Heroes}></Route>
-        <Route path="/scoreboard" component={Scoreboard}></Route>
-        </Switch>
-      </BrowserRouter>
-    );
+      return (
+          <BrowserRouter>
+              <Menu></Menu>
+              {/* 라우팅 영역*/}
+              <div className="container" style={{background: '#fff'}}>
+                  <Switch>
+                      <Route exact path="/" component={Home}></Route>
+                      <Route path="/heroes" component={Heroes}></Route>
+                      <Route path="/scoreboard" component={Scoreboard}></Route>
+                  </Switch>
+              </div>
+          </BrowserRouter>
+      );
   }
 }
