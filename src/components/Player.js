@@ -2,7 +2,7 @@ import React from 'react';
 import Counter from "./Counter";
 import PropTypes from 'prop-types';
 import styles from '../pages/scoreboard/Scoreboard.module.css';
-import classNames from 'classnames';
+
 
 export class Player extends React.Component {
   static propTypes = {

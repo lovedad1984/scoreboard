@@ -7,6 +7,7 @@ import {Root} from "./pages/Root";
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(<Provider store={store}><Root /></Provider>, document.getElementById('root'));
 

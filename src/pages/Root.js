@@ -6,9 +6,7 @@ import Scoreboard from "./scoreboard/Scoreboard";
 import {Menu} from "./Menu";
 
 export class Root extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
       return (
